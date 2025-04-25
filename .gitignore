@@ -1,0 +1,5 @@
+__pycache__/
+kaiftourkz.db
+.env
+*.pyc
+*.sqlite3

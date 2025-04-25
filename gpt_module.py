@@ -1,8 +1,7 @@
 # gpt_module.py
+import os
 import openai # Импортируем библиотеку openai, которую мы ставили через pip. Она нужна, чтобы делать запросы в API OpenAI (в нашем случае — к модели GPT-3.5-turbo).
-from config import OPENAI_API_KEY #Мы забираем ключ API из отдельного файла config.py.
-
-openai.api_key = OPENAI_API_KEY #Тут мы устанавливаем ключ, чтобы библиотека знала, кто мы.Без этого любая попытка что-то отправить в OpenAI API выдаст ошибку
+openai.api_key = os.getenv("OPENAI_API_KEY")  # теперь ключ берётся из переменной окружения
 
 # Начальная система-инструкция (можно кастомить под тур-ассистента)
 SYSTEM_PROMPT = {

@@ -1,11 +1,12 @@
 # telegram_bot.py
 
 import openai
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 from db_module import init_db, save_client, save_message
 from gpt_module import ask_gpt
-from config import TELEGRAM_TOKEN
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 # При запуске — создаём базу
 init_db()

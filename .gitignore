@@ -1,5 +1,6 @@
 __pycache__/
 kaiftourkz.db
 .env
+config.py
 *.pyc
 *.sqlite3

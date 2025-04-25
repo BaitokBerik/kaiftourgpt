@@ -12,3 +12,11 @@
 ```bash
 pip install -r requirements.txt
 python telegram_bot.py
+
+## Настройка
+
+1. Скопируй `config_template.py` в `config.py`
+2. Вставь свои ключи:
+   - OpenAI API Key
+   - Telegram Bot Token
+3. Всё! Теперь можешь запускать `telegram_bot.py`
